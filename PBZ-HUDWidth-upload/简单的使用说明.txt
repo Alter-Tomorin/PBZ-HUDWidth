@@ -1,0 +1,30 @@
+﻿PBZ_HUDWidth 快速上手
+============================
+
+前置：游戏需要已安装 UE4SS（能加载 Lua mod）。
+
+0. 解压到你想放的地方
+
+1. 安装（推荐用第一种方法）
+右键 install.ps1 →「使用 PowerShell 运行」。
+脚本会自动寻找 Steam 库里的游戏目录；找不到时按提示加 -GameDir 参数。
+
+或者手动把 PBZ_HUDWidth （不是v1.0那个）文件夹放进：<游戏>\platform\steam\ue4ss\Mods\
+然后必须打开 Mods\mods.json，加一条：{ "mod_name": "PBZ_HUDWidth", "mod_enabled": true }目的是让ue4ss加载这个mod
+
+2. 启用
+   启动游戏，进入存档。
+   双击 PBZ_HUDWidth_Configurator.exe，点「对齐标准」。
+   两条会对齐到统一标准，灰框隐藏。
+
+3. 调整
+   拖动滑条，实时生效。关掉配置器即可，配置已保存。
+
+4. 恢复原版
+   配置器点「对齐取消」；或直接删除 Mods\PBZ_HUDWidth 文件夹。
+
+5、卸载 / 删除
+直接删掉 Mods\PBZ_HUDWidth 文件夹和PBZ_HUDWidth_v1.0文件夹即可，想删的干净的不得了就把 mods.json 的条目移除，游戏不需要任何修复
+
+说明：100% = 一周目满数值无饰品存档的原始条长，任何存档都向它对齐。
+详见 README.md
